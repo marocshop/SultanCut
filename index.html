@@ -246,14 +246,14 @@
     </div>
 
     <div class="logo-section">
-        <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO/main/logo.png" alt="SultanCut Logo" class="logo-placeholder">
+        <img src="https://raw.githubusercontent.com/younessradif6-lab/SultanCut/main/logo.png" alt="SultanCut Logo" class="logo-placeholder">
     </div>
 
     <div class="hero">
         <h1 class="main-title">حول الشينيور ديالك لآلة تقطيع احترافية فثواني 🛠️</h1>
         <p class="subtitle">كتقطع الخشب، البلاستيك والمعادن بسهولة وبدون ما تشري آلة جديدة</p>
         
-        <img src="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPO/main/hero.jpg" alt="رأس التقطيع العجيب" class="product-img">
+        <img src="https://raw.githubusercontent.com/younessradif6-lab/SultanCut/main/hero%20shot.jpg" alt="رأس التقطيع العجيب" class="product-img">
     </div>
 
     <div class="price-box">
@@ -338,7 +338,6 @@
 
 <script>
     document.getElementById('whatsappForm').addEventListener('submit', function(e) {
-        // نترك الفورم يرسل البيانات للـ iFrame المخفي أولاً بشكل طبيعي، ونلتقط القيم لإرسالها للواتساب
         const name = document.getElementById('fullName').value;
         const city = document.getElementById('city').value;
         const phone = document.getElementById('phone').value;
@@ -355,7 +354,6 @@
         const encodedMessage = encodeURIComponent(message);
         const whatsappUrl = `https://wa.me/${myPhoneNumber}?text=${encodedMessage}`;
         
-        // ننتظر نصف ثانية للتأكد من أن البيانات ذهبت للـ Google Sheet أولاً، ثم نوجه الزبون للواتساب
         setTimeout(function() {
             window.location.href = whatsappUrl;
         }, 500);
