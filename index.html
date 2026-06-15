@@ -30,17 +30,15 @@
             min-height: 100vh;
             box-shadow: 0 0 15px rgba(0,0,0,0.05);
         }
-        /* الهيدر العلوي */
         .top-banner {
-            background-color: #0f2042; /* كحلي شعار سلطان كاط */
+            background-color: #0f2042;
             color: #fff;
             text-align: center;
             padding: 12px;
             font-weight: 700;
             font-size: 0.9rem;
-            border-bottom: 3px solid #d4af37; /* خط ذهبي */
+            border-bottom: 3px solid #d4af37;
         }
-        /* قسم اللوغو */
         .logo-section {
             text-align: center;
             padding: 20px 15px 10px 15px;
@@ -49,23 +47,9 @@
             max-width: 150px;
             height: auto;
         }
-        /* قسم العناوين والمنتج */
         .hero {
             padding: 15px;
             text-align: center;
-        }
-        .main-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: #0f2042;
-            line-height: 1.4;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            font-size: 1rem;
-            color: #555;
-            font-weight: 400;
-            margin-bottom: 20px;
         }
         .product-img {
             width: 100%;
@@ -73,7 +57,6 @@
             display: block;
             margin-bottom: 20px;
         }
-        /* العرض والثمن */
         .price-box {
             background: #fff8eb;
             border: 2px solid #d4af37;
@@ -99,7 +82,6 @@
             font-weight: 700;
             margin-top: 5px;
         }
-        /* المميزات */
         .features {
             background: #0f2042;
             color: white;
@@ -118,7 +100,113 @@
             font-size: 1.4rem;
             margin-left: 12px;
         }
-        /* قسم الشهادات والآراء */
+
+        /* ===== COMPARISON SECTION ===== */
+        .comparison-section {
+            padding: 24px 15px;
+            background: #fff;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        .comp-heading {
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #0f2042;
+            margin-bottom: 4px;
+        }
+        .comp-sub {
+            text-align: center;
+            font-size: 1rem;
+            color: #d4af37;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .imgs-row {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+        .col-img {
+            width: 100%;
+            border-radius: 10px;
+            height: 140px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .col-label {
+            border-radius: 20px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 7px 10px;
+        }
+        .vs-circle {
+            background: #fff;
+            border: 2px solid #d4af37;
+            border-radius: 50%;
+            width: 42px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #0f2042;
+            position: absolute;
+            left: 50%;
+            top: 60px;
+            transform: translateX(-50%);
+            z-index: 2;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        }
+        .comp-cols {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+        .col-trad {
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 10px;
+            border: 1.5px solid #e0e0e0;
+        }
+        .col-sultan {
+            background: #fffdf4;
+            border-radius: 12px;
+            padding: 10px;
+            border: 1.5px solid #d4af37;
+        }
+        .feat-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 9px 4px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.88rem;
+        }
+        .feat-row:last-child { border-bottom: none; }
+        .feat-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.95rem;
+            flex-shrink: 0;
+        }
+        .col-trad .feat-icon { background: #0f2042; }
+        .col-sultan .feat-icon { background: #d4af37; }
+        .feat-label { flex: 1; color: #333; }
+        .feat-mark { font-size: 1.1rem; font-weight: 700; flex-shrink: 0; }
+        .col-trad .feat-mark { color: #e63946; }
+        .col-sultan .feat-mark { color: #2a9d5c; }
+        /* ===== END COMPARISON ===== */
+
         .reviews-section {
             padding: 20px 15px;
             background: #fafafa;
@@ -150,7 +238,63 @@
         .review-text { font-size: 0.95rem; color: #333; margin-bottom: 5px; }
         .reviewer { font-size: 0.85rem; color: #777; font-weight: 700; text-align: left; }
         
-        /* قسم الفورم (Form) */
+        /* ===== FAQ SECTION STYLE ===== */
+        .faq-section {
+            padding: 25px 15px;
+            background: #fdfdfd;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+        }
+        .faq-title {
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #0f2042;
+            margin-bottom: 15px;
+        }
+        .faq-item {
+            margin-bottom: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #fff;
+        }
+        .faq-item summary {
+            padding: 14px;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: #0f2042;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            outline: none;
+            user-select: none;
+        }
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        .faq-item summary::after {
+            content: '＋';
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #d4af37;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+        .faq-item[open] summary::after {
+            content: '－';
+        }
+        .faq-content {
+            padding: 0 14px 14px 14px;
+            font-size: 0.9rem;
+            color: #555;
+            border-top: 1px dashed #f0f0f0;
+            background: #fafafa;
+        }
+        /* ===== END FAQ STYLE ===== */
+
         .form-section {
             padding: 25px 15px;
             background: #fff;
@@ -162,9 +306,7 @@
             color: #0f2042;
             margin-bottom: 20px;
         }
-        .form-group {
-            margin-bottom: 15px;
-        }
+        .form-group { margin-bottom: 15px; }
         .form-group label {
             display: block;
             margin-bottom: 8px;
@@ -185,7 +327,6 @@
             border-color: #0f2042;
             outline: none;
         }
-        /* زر التأكيد الكبير */
         .submit-btn {
             width: 100%;
             background-color: #25D366;
@@ -204,7 +345,6 @@
         }
         .submit-btn span { margin-left: 10px; font-size: 1.5rem; }
 
-        /* الزر السفلي الثابت للنزول للفورم */
         .sticky-container {
             position: fixed;
             bottom: 0;
@@ -250,8 +390,6 @@
     </div>
 
     <div class="hero">
-        
-        
         <img src="https://raw.githubusercontent.com/younessradif6-lab/SultanCut/main/hero%20shot.jpg" alt="رأس التقطيع العجيب" class="product-img">
     </div>
 
@@ -268,6 +406,48 @@
         <div class="feature-item"><span>☑️</span> متخلص حتى تقلب سلعتك بيديك وتأكد منها</div>
         <div class="feature-item"><span>📞</span> الدعم والتأكيد سريع ومباشر عبر الواتساب</div>
     </div>
+
+    <!-- ===== COMPARISON SECTION ===== -->
+    <div class="comparison-section">
+        <div class="comp-heading">الفرق واضح</div>
+        <div class="comp-sub">نفس الشينيور، نتائج مختلفة</div>
+
+        <div class="imgs-row">
+            <div>
+                <!-- Traditional Saw Image Asset Placeholder -->
+                <img class="col-img" style="filter:grayscale(100%);"
+                    src="https://raw.githubusercontent.com/younessradif6-lab/SultanCut/main/regular-saw.jpg"
+                    alt="الطريقة التقليدية">
+                <div class="col-label" style="background:#0f2042; color:#fff;">الطريقة التقليدية</div>
+            </div>
+            <div>
+                    src="https://github.com/younessradif6-lab/SultanCut/blob/8c0bebbda1c3af3821145d203ec9747e65db8766/hero%20shot%20table.png"
+                <img class="col-img"
+                    src="https://raw.githubusercontent.com/younessradif6-lab/SultanCut/main/sultancut-action.jpg"
+                    alt="SultanCut">
+                <div class="col-label" style="background:#0f2042; color:#d4af37;">SultanCut</div>
+            </div>
+            <div class="vs-circle">VS</div>
+        </div>
+
+        <div class="comp-cols">
+            <div class="col-trad">
+                <div class="feat-row"><div class="feat-icon">🕐</div><span class="feat-label">وقت أطول</span><span class="feat-mark">✕</span></div>
+                <div class="feat-row"><div class="feat-icon">💪</div><span class="feat-label">مجهود أكبر</span><span class="feat-mark">✕</span></div>
+                <div class="feat-row"><div class="feat-icon">🎯</div><span class="feat-label">دقة أقل</span><span class="feat-mark">✕</span></div>
+                <div class="feat-row"><div class="feat-icon">🪚</div><span class="feat-label">قطع خشن</span><span class="feat-mark">✕</span></div>
+                <div class="feat-row"><div class="feat-icon">😩</div><span class="feat-label">إرهاق وتعب</span><span class="feat-mark">✕</span></div>
+            </div>
+            <div class="col-sultan">
+                <div class="feat-row"><div class="feat-icon">🕐</div><span class="feat-label">وقت أقل</span><span class="feat-mark">✔</span></div>
+                <div class="feat-row"><div class="feat-icon">💪</div><span class="feat-label">مجهود أقل</span><span class="feat-mark">✔</span></div>
+                <div class="feat-row"><div class="feat-icon">🎯</div><span class="feat-label">دقة عالية</span><span class="feat-mark">✔</span></div>
+                <div class="feat-row"><div class="feat-icon">🪚</div><span class="feat-label">قطع ناعم ونظيف</span><span class="feat-mark">✔</span></div>
+                <div class="feat-row"><div class="feat-icon">😊</div><span class="feat-label">راحة وسهولة</span><span class="feat-mark">✔</span></div>
+            </div>
+        </div>
+    </div>
+    <!-- ===== END COMPARISON ===== -->
 
     <div class="reviews-section">
         <h2 class="reviews-headline">⭐ أكثر من 100 زبون اختارو المنتج ديالنا ووفروا فلوسهم</h2>
@@ -291,6 +471,40 @@
             <div class="reviewer">— سعيد، الدار البيضاء</div>
         </div>
     </div>
+
+    <!-- ===== FAQ SECTION ===== -->
+    <div class="faq-section">
+        <h2 class="faq-title">🤔 الأسئلة الشائعة (FAQ)</h2>
+        
+        <details class="faq-item">
+            <summary>واش هاد الرأس كيركب على كاع أنواع الشينيور؟</summary>
+            <div class="faq-content">
+                <p>نعم، الرأس مصمم بشكل قياسي ومتوافق مع جميع أنواع وأحجام الشينيور (المثقاب) الكهربائي أو اللي بالبطارية المتوفرة فالسوق.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>شنو هي المواد اللي يقدر يقطعها؟</summary>
+            <div class="faq-content">
+                <p>ممتاز لتقطيع الخشب، البلاستيك، والألواح الرقيقة بكل سهولة ودقة بلا ما يحتاج مجهود كبير منك.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>شحال كياخد التوصيل من وقت؟</summary>
+            <div class="faq-content">
+                <p>التوصيل سريع بزاف! كياخد من 24 إلى 48 ساعة كحد أقصى لجميع المدن المغربية، والتوصيل بـ 15 درهم فقط.</p>
+            </div>
+        </details>
+
+        <details class="faq-item">
+            <summary>كيفاش كتم عملية الدفع؟</summary>
+            <div class="faq-content">
+                <p>الدفع آمن 100% عند الاستلام. يعني متخلصش حتى يوصلك المنتج لدارك وتفتح العلبة وتأكد من الجودة ديالو بيديك.</p>
+            </div>
+        </details>
+    </div>
+    <!-- ===== END FAQ SECTION ===== -->
 
     <div id="order-form" class="form-section">
         <h2 class="form-title">📋 عبي المعلومات التالية لتأكيد الطلب:</h2>
